@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Title</title>
+<style>
+ @page {
+ 		size:297mm 230mm;
+        @top-left{
+            content:element(header-left);
+        };
+        @top-right {
+            content: element(header-right)
+        };
+        @bottom-left {
+            content: element(footer-left)
+        };
+        @bottom-right {
+            content: element(footer-right)
+        };
+    }
+
+body {
+	font-family: SimHei;
+}
+
+.color {
+	color: green;
+}
+
+.pos {
+	position: absolute;
+	left: 200px;
+	top: 200px;
+	width: 200px;
+	font-size: 20px;
+}
+</style>
+</head>
+<body>
+	<img src="logo.jpg" />
+	<div class="color pos">你好，${name}</div>
+</body>
+</html>
